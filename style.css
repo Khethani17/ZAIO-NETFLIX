@@ -200,6 +200,7 @@ main {
     flex-direction: column;
     padding: 10px 148px;
     border-bottom: none;
+
 }
 
 .trending-container {
@@ -215,24 +216,23 @@ main {
 }
 
 .trend {
-    /* display: flex;
+
+    display: flex;
     gap: 30px;
     overflow-x: auto;
-    margin-bottom: 60px;
-    margin-top: 15px;
-    padding: 0 25px;
-    height: 315px;
-    border-bottom: none; */
-        display: flex;
-        gap: 30px;
-        overflow-x: auto;     /* ✅ keep scroll */
-        width: 100%;
-        max-width: 1200px;    /* ✅ LOCK to laptop width */
-        margin: 0 auto;      /* ✅ center on big screens */
-      
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 40px;
+
 }
 
 
+.trend::-webkit-scrollbar {
+    display: none;
+}
 .movie {
     background-position: center;
     background-size: cover;
@@ -300,16 +300,33 @@ main {
     background-image: url(./resources/trend8.webp);
 }
 
+.tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 140px;
+}
+
+.tv img{
+   z-index: 1;
+}
+.tv video{
+    position: absolute;
+
+}
+
 #more-reasons {
     display: flex;
     flex-direction: column;
     padding: 0 148px;
-    margin-bottom: 30px;
+    background-color: black;
 }
 
 #more-reasons h2 {
     font-size: 24px;
     font-weight: 500;
+    color: white;
 }
 
 .more-reasons-cards {
@@ -331,6 +348,7 @@ main {
 
 .reason h3 {
     font-size: 24px;
+    color: white;
 }
 
 .reason p {
@@ -352,8 +370,10 @@ main {
 #faq-items {
     display: flex;
     flex-direction: column;
-    padding: 0 148px;
+    padding: 30px 148px 0 148px;
     gap: 8px;
+    background-color: black;
+    
 }
 
 
