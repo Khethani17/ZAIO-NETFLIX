@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+
+    /* ✅ Containers fit the phone screen */
+    .trend,
+    .reasons,
+    details {
+      width: 100%;
+      max-width: 100vw;
+      box-sizing: border-box;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    /* ✅ Trending scrolls horizontally */
+    .trend {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    /* ✅ Cards NEVER shrink */
+    .trend > * {
+      flex-shrink: 0;
+      max-width: 80vw;
+    }
+  
+    /* ✅ More reasons stack vertically */
+    .more-reasons-cards {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* ✅ Details fit screen */
+    details {
+      width: 100%;
+    }
+  
+    summary {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .row {
+      display: flex;
+    }
+  
+  }
+  
