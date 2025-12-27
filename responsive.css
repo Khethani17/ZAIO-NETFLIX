@@ -1,101 +1,147 @@
-
 @media (max-width: 768px) {
 
-body{
-  overflow-x: hidden;
-}
-  nav,
-  #trending-now,
-  #more-reasons,
-  #faq-items,
-  #links {
+    /* GLOBAL PADDING FIX */
+    nav,
+    #trending-now,
+    #more-reasons,
+    #faq-items,
+    #links {
+      padding-left: 20px;
+      padding-right: 20px;
       margin: 0;
-      padding: 0 16px ;
-  }
-
-  .hero-menu h1,
-  .hero-menu h3,
-  .hero-menu p,
-  .hero-menu form {
-      width: 100%;
-  }
-
-  .hero-menu h1 {
-      font-size: 2.2rem;
-  }
-
-  form {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  input,
-  .footer-form input {
-      width: 100%;
-  }
-
-  .hero-menu form {
-      flex-direction: row;
-      width: 588px;
-      max-width: 588px;
-      margin: 0 auto;
-  }
-
-  .hero-menu input {
-      width: 367px;
-  }
-
-  .hero-menu button {
-      width: 211px;
-  }
-
-  button,
-  .footer-form button {
-      width: 100%;
-  }
-
-  .trend {
-      display: flex;
-      gap: 16px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      width: 100vw;
-      max-width: 100vw;
-      padding: 0 16px;
-      -webkit-overflow-scrolling: touch;
-  }
-
-  .trend .movie {
-      flex-shrink: 0;
-      width: 160px;
-  }
-
-  #more-reasons {
-      padding: 0 16px;
-  }
-
-  .more-reasons-cards {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .reason {
-      width: 100%;
-      max-width: 100%;
+    }
+  
+    nav {
       height: auto;
-      padding: 20px 16px;
-  }
-
-  details {
+      margin: 0;
+    }
+  
+    /* HERO */
+    .hero-menu {
+      padding-top: 80px;
+    }
+  
+    .hero-menu h1 {
+      font-size: 2rem;
       width: 100%;
-  }
-
-  summary {
+    }
+  
+    .hero-menu p,
+    .hero-menu h3 {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    form {
+      flex-direction: column;
+      width: 100%;
+      align-items: stretch;
+    }
+  
+    form input,
+    form button {
+      width: 100%;
+      height: 48px;
+    }
+  
+    /* TRENDING */
+    .trend {
+      padding-left: 10px;
+      height: auto;
+    }
+  
+    .movie {
+      width: 140px;
+      height: 210px;
+    }
+  
+    .trend span {
+      font-size: 4rem;
+      top: 110px;
+    }
+  
+    /* TV SECTION */
+    .tv {
+      padding: 0;
+    }
+  
+    .tv img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .tv video {
+      width: 70%;
+    }
+  
+    /* MORE REASONS */
+    .more-reasons-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .reason {
+      width: 100%;
+      max-width: 360px;
+    }
+  
+    /* FAQ */
+    summary,
+    .answer {
       font-size: 18px;
-      padding: 16px;
+    }
+  
+    /* FOOTER */
+    .footer-form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-form input,
+    .footer-form button {
+      width: 100%;
+    }
+  
+    /* LINKS */
+    .links-items {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
+  @media (min-width: 769px) and (max-width: 1024px) {
 
-  .answer {
-      font-size: 16px;
+    nav {
+      margin: 0 40px;
+    }
+  
+    #trending-now,
+    #more-reasons,
+    #faq-items,
+    #links {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .hero-menu h1 {
+      font-size: 2.6rem;
+    }
+  
+    .hero-menu p,
+    .hero-menu h3 {
+      width: 90%;
+    }
+  
+    .more-reasons-cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .reason {
+      width: 45%;
+    }
+  
+    .links-items {
+      flex-wrap: wrap;
+    }
   }
-}
+    
